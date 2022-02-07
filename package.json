@@ -1,0 +1,20 @@
+{
+  "name": "hdwallet",
+  "version": "1.0.0",
+  "description": "bitcore mnemonic ethereum",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lakshman kashyap",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "bitcore-lib": "^8.25.25",
+    "bitcore-mnemonic": "^8.25.25",
+    "ethereumjs-wallet": "0.6.3",
+    "web3": "^1.7.0"
+  }
+}
