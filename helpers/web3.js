@@ -66,10 +66,10 @@ export let transferFund  = async(sendersData, recieverData, amountToSend)=>{
     });
 }
 
+// web3.eth.getBlock(blockHashOrBlockNumber [, returnTransactionObjects] [, callback])
 export let getBlock = async(blockNumber)=>{
     return new Promise(async (resolve, reject) => {
-        web3.eth.getBlock(blockNumber).then((res) => {
-            // console.log('block detail', res)
+        web3.eth.getBlock(blockNumber,true).then((res) => {
             resolve(res);
         }).catch((e)=>{
             console.log(e);
